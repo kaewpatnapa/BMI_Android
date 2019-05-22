@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg2"
+        android:scaleType="centerCrop"
+        android:id="@+id/formBack"
+        />
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="359dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="248dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/textView_activity"
+                android:layout_width="365dp"
+                android:layout_height="wrap_content"
+                android:text="ใส่ข้อมูล" />
+
+
+            <Button
+                android:id="@+id/Button_Save"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/register_button"
+                android:lastBaselineToBottomHeight="20dp"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="26dp"
+                android:textStyle="normal"
+
+                />
+
+            <ImageView
+                android:id="@+id/btn_next_activity"
+                android:layout_width="140dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:background="@drawable/note2"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
+

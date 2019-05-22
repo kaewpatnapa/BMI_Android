@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg5"
+        android:scaleType="centerCrop"
+        android:id="@+id/formBack"
+        />
+
+    <ImageView
+        android:id="@+id/formLogo"
+        android:layout_width="411dp"
+        android:layout_height="115dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="47dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="60dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/formLogo"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/trans_white_rectangle"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ดัชนีมวลกาย BMI "
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="36dp"
+                android:textStyle="bold"
+
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="36dp"
+                android:text="กิจกรรมเผาผลาญ"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                />
+
+
+
+            <Button
+                android:id="@+id/Button_login"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:textSize="26dp"
+                android:text="Login"
+                android:textStyle="normal"
+                android:background="@drawable/register_button"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:lastBaselineToBottomHeight="20dp"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
